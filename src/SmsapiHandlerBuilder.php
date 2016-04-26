@@ -13,6 +13,11 @@ class SmsapiHandlerBuilder
         $this->smsapiProxy = $smsapiProxy;
     }
 
+    public function buildFromNativeConfig(array $smsapiConfig)
+    {
+        return $this->buildFromConfig(new SmsapiConfig($smsapiConfig));
+    }
+
     public function buildFromConfig(SmsapiConfig $smsapiConfig)
     {
         $smsFactory = new SmsFactory($this->smsapiProxy, $smsapiConfig->senderClient);

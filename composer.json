@@ -3,7 +3,7 @@
     "description": "A Monolog Handler for SMSAPI",
     "license": "Apache-2.0",
     "homepage": "http://smsapi.pl",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "keywords": [
         "monolog",
         "sms",

@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v0.2.2, 2016-04-26
+* add SmsapiHandlerBuilder::buildFromNativeConfig
+* improve readme
+
 ## v0.2.1, 2016-04-26
 * change package vendor to *smsapi*
 
