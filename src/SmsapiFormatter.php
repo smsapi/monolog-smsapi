@@ -1,9 +1,9 @@
 <?php
 namespace MonologSmsapi;
 
-use Monolog\Formatter\NormalizerFormatter;
+use Monolog\Formatter\LineFormatter;
 
-class SmsapiFormatter extends NormalizerFormatter
+class SmsapiFormatter extends LineFormatter
 {
     private $outputLength;
 
@@ -11,13 +11,18 @@ class SmsapiFormatter extends NormalizerFormatter
     {
         $this->outputLength = $smsapiConfig->formatterOutputLength;
 
-        parent::__construct($smsapiConfig->formatterDateFormat);
+        parent::__construct(
+            $smsapiConfig->formatterFormat,
+            $smsapiConfig->formatterDateFormat,
+            $smsapiConfig->formatterAllowInlineLineBreaks,
+            $smsapiConfig->formatterIgnoreEmptyContextAndExtra
+        );
     }
 
     public function format(array $record)
     {
-        $output = parent::format($record);
+        $record = parent::format($record);
 
-        return substr($output, 0, $this->outputLength);
+        return substr($record, 0, $this->outputLength);
     }
 }

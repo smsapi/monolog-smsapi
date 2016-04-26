@@ -9,9 +9,9 @@ class SmsapiHandler extends AbstractProcessingHandler
     private $formatterFactory;
     private $config;
 
-    public function __construct(SmsapiSender $sender, SmsapiFormatterFactory $formatterFactory, SmsapiConfig $config)
+    public function __construct(MessageSender $sender, SmsapiFormatterFactory $formatterFactory, SmsapiConfig $config)
     {
-        parent::__construct($this->config->handlerLoggerLevel, $this->config->handlerBubble);
+        parent::__construct($config->handlerLoggerLevel, $config->handlerBubble);
 
         $this->sender = $sender;
         $this->formatterFactory = $formatterFactory;

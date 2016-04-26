@@ -3,7 +3,7 @@ namespace MonologSmsapi;
 
 use SMSApi\Api\SmsFactory;
 
-class SmsapiSender
+class SmsapiSender implements MessageSender
 {
     private $smsFactory;
     private $sender;
