@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v0.2.1, 2016-04-26
+* change package vendor to *smsapi*
+
 ## v0.2.0, 2016-04-26
 * add tests
 * add formatterFormat to config

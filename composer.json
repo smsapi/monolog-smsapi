@@ -1,5 +1,5 @@
 {
-    "name": "smsapi.pl/monolog-smsapi",
+    "name": "smsapi/monolog-smsapi",
     "description": "A Monolog Handler for SMSAPI",
     "license": "Apache-2.0",
     "homepage": "http://smsapi.pl",

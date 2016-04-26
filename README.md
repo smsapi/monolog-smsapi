@@ -6,7 +6,7 @@
 
 ## Installation
 ```bash
-composer require smsapi.pl/monolog-smsapi:^0.1
+composer require smsapi/monolog-smsapi:^0.2.1
 ```
 
 ## Usage
