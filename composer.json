@@ -3,7 +3,6 @@
     "description": "A Monolog Handler for SMSAPI",
     "license": "Apache-2.0",
     "homepage": "http://smsapi.pl",
-    "version": "0.2.2",
     "keywords": [
         "monolog",
         "sms",
@@ -14,7 +13,7 @@
     "require": {
         "php": "5.6.*",
         "monolog/monolog": "^1.19",
-        "smsapi.pl/php-client": "^1",
+        "smsapi/php-client": "^1",
         "beberlei/assert": "^2.5"
     },
     "require-dev": {

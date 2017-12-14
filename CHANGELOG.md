@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v0.2.3, 2017-12-14
+* fix composer
+
 ## v0.2.2, 2016-04-26
 * add SmsapiHandlerBuilder::buildFromNativeConfig
 * improve readme
